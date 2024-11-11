@@ -2,4 +2,5 @@
 
 Problem : 
 
-Gen a notifcation when my website is down. 
+Gen a notification when my website is down. 
+Use Amazon Q to help crate it.
