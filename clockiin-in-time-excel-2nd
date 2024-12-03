@@ -1,0 +1,12 @@
+import pandas as pd
+
+# Read your Excel file with xlrd engine
+df = pd.read_excel("20nov.xls", engine='xlrd')
+
+# Sort the data by "Date And Time"
+sorted_df = df.sort_values(by='Date And Time', ascending=True)
+
+# Save the sorted data as .xlsx (newer Excel format)
+sorted_df.to_excel("20-nov-sorted.xlsx", index=False, engine='openpyxl')
+
+print("New sorted file has been created as '20-nov-sorted.xlsx'")
