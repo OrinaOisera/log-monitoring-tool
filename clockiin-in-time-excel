@@ -1,0 +1,12 @@
+import pandas as pd
+
+# Read your Excel file
+df = pd.read_excel("18-nov.xls")
+
+# Sort the data by "Date And Time"
+sorted_df = df.sort_values(by='Date And Time', ascending=True)
+
+# Save the sorted data to a new Excel file
+sorted_df.to_excel("18-nov-sorted.xls", index=False)
+
+print("New sorted file has been created as '18-nov-sorted.xls'")
